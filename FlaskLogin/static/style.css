@@ -1,0 +1,15 @@
+body
+{
+    background-image: linear-gradient(black,gray,black);
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+div
+{
+    background-color: rgba(27, 27, 49, 0.603);
+    padding: 2%;
+    border-radius: 25px;
+    border:groove darkslategray;
+}
