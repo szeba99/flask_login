@@ -13,7 +13,7 @@ def hello_world():
         if (check_pw(request.form["username"],request.form["password"])):
             return redirect("logged_in")
         else:
-            return "You are dumb as fuck"
+            return "Wrong password!"
     else:
         return render_template("index.html")
 
@@ -35,7 +35,7 @@ def register():
             save_user(request.form["username"],request.form["password"])
             return "Succesfully registered. Try to log in now."
         else:
-            return "This username is already in use by some idiot"
+            return "This username is already in use"
 
     return render_template("register.html")
 
